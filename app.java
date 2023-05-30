@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 #This script is only for sudoers
 #If you are not a sudoers please don't use this script
@@ -28,5 +29,8 @@
         fi
         echo "This is a good deployment you made here"
         fi
-
+#Useless branch
 this is a perfect script
+=======
+ajustment
+>>>>>>> Dev
