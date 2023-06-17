@@ -1,0 +1,165 @@
+File and directory management Commands:  
+======================================
+mkdir    dirName   = 
+rmdir    dirName   = 
+rm -rf   dirName
+ls dirName  = List the content of the dir
+ls  = List the content of the pwd
+pwd 
+cd dirName 
+====================
+touch fileName = create an empty file
+Create the following files:
+  list.txt 
+  hello.py 
+  greet.sh 
+  app.java  
+  monitor.sh   
+  deploy.sh 
+option1:
+touch list.txt 
+touch hello.py  
+touch greet.sh 
+
+option2:
+touch list.txt hello.py greet.sh  
+
+Chidi  = 
+Graphical User interface - GUI :
+
+Create a file [list.txt] and add content??    
+=========================================
+1. Simon 
+2. Legah 
+3. Landmark 
+4. Dominion 
+We shall use the vi command:
+  vi list.txt 
+vi has 'insert' mode and 'command' mode:
+
+1. You start accessing the file in command mode 
+   In command mode we can't modify content
+     press the 'i' key to enter "insert" mode 
+     press "esc key" to enter command mode 
+
+2. Save and Quit: 
+    1. press "esc key" to enter command mode 
+    2. type ':wq' or ':wq!' and press enter-key 
+       to save and quit
+
+3.  Quit without saving:  
+     press "esc key" to enter command mode          
+     type ':q!' and press enter key to quit 
+     without saving
+
+ short-cut -- Save and Quit: 
+    press "esc key" to enter command mode
+    do a quick double press on the shift+z key  
+    to save and quit = press+hold '
+
+Modifying the content of a file:
+  Text editors:
+ Windows:
+    sublime text
+    bracket
+    notepad++
+    vs code 
+    atom 
+    eclipse 
+
+save time:
+  300,000USD/year  
+ short-cut is the longest route to success 
+
+Class29: 
+   9 months 
+   July 8, 2022 --> Jan 7, 2023 
+   2/3/4/5/6th month 
+
+4.5 months = modules     :
+1.5 months = Bootcamp    :
+==============================
+DevOps Engineers  = hired/ 
+Detailed deployment =- 
+
+vi list.txt   
+list :
+ simon 
+ Legah 
+ Paul 
+ John 
+ Peter 
+ James 
+ Tita 
+ Pefok 
+ Linux 
+ Windows 
+ Git 
+ Maven 
+ aws 
+ gcp 
+ mgc 
+ toyota 
+
+Reading/displaying the content of a file:
+cat fileName
+cat -n fileName  
+[ec2-user@demo maven]$ cat list.txt
+[ec2-user@demo maven]$ cat -n list.txt
+     1  list :
+     2   simon
+     3   Legah
+     4   Paul
+     5   John
+     6   Peter
+     7   James
+
+head fileName = display the 1st 10 lines 
+head -5 fileName = display the 1st 5 lines 
+head -2 fileName = display the 1st 5 lines                
+
+tail fileName = display the last 10 lines
+tail -2 fileName = display the last 2 lines
+tail -1 fileName = display the last lines
+
+less fileName
+   press 'q' to exit
+more fileName 
+
+Backup files:
+============
+cp = creates another copy of your file  
+cp fileName newFileName
+
+mv = rename and/or relocate
+mv hello.py helloworld.py 
+mv aws /tmp/gcp
+
+rm fileName = delete the file   
+wc fileName = 
+wc -l list.txt = display number of lines 
+
+ln = Create links of files:
+Hard Link = copy:
+  ln fileName linkName  
+  ln list.txt mylist 
+
+soft links:
+  ln -s fileName linkName
+  ln -s new.txt mybest
+
+[ec2-user@demo maven]$ ll
+total 16
+drwxr-xr-x. 2 ec2-user ec2-user    6 Jan 21 19:40 class31
+-rw-r--r--. 2 ec2-user ec2-user  379 Jan 21 19:22 list.txt
+lrwxrwxrwx. 1 ec2-user ec2-user    7 Jan 21 19:40 mybest -> new.txt
+-rw-r--r--. 2 ec2-user ec2-user  379 Jan 21 19:22 mylist
+-rw-r--r--. 1 ec2-user ec2-user  379 Jan 21 19:25 new.txt
+-rw-r--r--. 1 ec2-user ec2-user 4028 Jan 21 18:39 notes.txt
+
+FileType:
+ d    = Directory   
+ -    = regular file     
+ l    = link
+
+
